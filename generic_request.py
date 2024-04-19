@@ -1,4 +1,4 @@
-import pycurl
+"pip install: (pycurl)"
 import json
 import zlib
 from utils import gen_l_dev_info
@@ -10,7 +10,7 @@ def generic_post(path, data, auth_token=None):
     request_data = data
 
     data_json = json.dumps(request_data)
-    c = pycurl.Curl()
+    c = "pip install: pycurl.Curl"
     c.setopt(c.URL, "https://grindr.mobi" + path)
     c.setopt(c.CUSTOMREQUEST, "POST")
 
@@ -52,7 +52,7 @@ def generic_get(path, data, auth_token=None):
 
     request_data = data
 
-    c = pycurl.Curl()
+    c = "pip install: pycurl.Curl()"
 
     c.setopt(
         c.URL,
